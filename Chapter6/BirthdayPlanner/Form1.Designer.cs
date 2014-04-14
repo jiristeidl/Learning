@@ -37,14 +37,14 @@
             this.numberOfPeople = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.numberBirthday = new System.Windows.Forms.NumericUpDown();
-            this.fancyBirthday = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cakeWriting = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.birthdayCost = new System.Windows.Forms.Label();
             this.tooLongLabel = new System.Windows.Forms.Label();
+            this.birthdayCost = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cakeWriting = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.fancyBirthday = new System.Windows.Forms.CheckBox();
+            this.numberBirthday = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numberOfPeople)).BeginInit();
@@ -171,21 +171,52 @@
             this.tabPage2.Text = "Birthday Party";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // tooLongLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Number of People";
+            this.tooLongLabel.AutoSize = true;
+            this.tooLongLabel.BackColor = System.Drawing.Color.Red;
+            this.tooLongLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tooLongLabel.Location = new System.Drawing.Point(95, 80);
+            this.tooLongLabel.Name = "tooLongLabel";
+            this.tooLongLabel.Size = new System.Drawing.Size(71, 13);
+            this.tooLongLabel.TabIndex = 7;
+            this.tooLongLabel.Text = "TOO LONG";
             // 
-            // numberBirthday
+            // birthdayCost
             // 
-            this.numberBirthday.Location = new System.Drawing.Point(21, 29);
-            this.numberBirthday.Name = "numberBirthday";
-            this.numberBirthday.Size = new System.Drawing.Size(120, 20);
-            this.numberBirthday.TabIndex = 1;
+            this.birthdayCost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.birthdayCost.Location = new System.Drawing.Point(55, 127);
+            this.birthdayCost.Name = "birthdayCost";
+            this.birthdayCost.Size = new System.Drawing.Size(100, 23);
+            this.birthdayCost.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(21, 134);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(28, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Cost";
+            // 
+            // cakeWriting
+            // 
+            this.cakeWriting.CausesValidation = false;
+            this.cakeWriting.Location = new System.Drawing.Point(21, 97);
+            this.cakeWriting.Name = "cakeWriting";
+            this.cakeWriting.Size = new System.Drawing.Size(100, 20);
+            this.cakeWriting.TabIndex = 4;
+            this.cakeWriting.Text = "Happy Birthday";
+            this.cakeWriting.TextChanged += new System.EventHandler(this.cakeWriting_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(21, 80);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Cake Writing";
             // 
             // fancyBirthday
             // 
@@ -198,50 +229,39 @@
             this.fancyBirthday.TabIndex = 2;
             this.fancyBirthday.Text = "Fancy Decorations";
             this.fancyBirthday.UseVisualStyleBackColor = true;
+            this.fancyBirthday.CheckedChanged += new System.EventHandler(this.fancyBirthday_CheckedChanged);
             // 
-            // label4
+            // numberBirthday
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 80);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Cake Writing";
+            this.numberBirthday.Location = new System.Drawing.Point(21, 29);
+            this.numberBirthday.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numberBirthday.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numberBirthday.Name = "numberBirthday";
+            this.numberBirthday.Size = new System.Drawing.Size(120, 20);
+            this.numberBirthday.TabIndex = 1;
+            this.numberBirthday.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.numberBirthday.ValueChanged += new System.EventHandler(this.numberBirthday_ValueChanged);
             // 
-            // cakeWriting
+            // label3
             // 
-            this.cakeWriting.Location = new System.Drawing.Point(21, 97);
-            this.cakeWriting.Name = "cakeWriting";
-            this.cakeWriting.Size = new System.Drawing.Size(100, 20);
-            this.cakeWriting.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 134);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Cost";
-            // 
-            // birthdayCost
-            // 
-            this.birthdayCost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.birthdayCost.Location = new System.Drawing.Point(55, 127);
-            this.birthdayCost.Name = "birthdayCost";
-            this.birthdayCost.Size = new System.Drawing.Size(100, 23);
-            this.birthdayCost.TabIndex = 6;
-            // 
-            // tooLongLabel
-            // 
-            this.tooLongLabel.AutoSize = true;
-            this.tooLongLabel.BackColor = System.Drawing.Color.Red;
-            this.tooLongLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tooLongLabel.Location = new System.Drawing.Point(95, 80);
-            this.tooLongLabel.Name = "tooLongLabel";
-            this.tooLongLabel.Size = new System.Drawing.Size(71, 13);
-            this.tooLongLabel.TabIndex = 7;
-            this.tooLongLabel.Text = "TOO LONG";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(18, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Number of People";
             // 
             // Form1
             // 
