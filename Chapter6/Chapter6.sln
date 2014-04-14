@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthdayPlanner", "BirthdayPlanner\BirthdayPlanner.csproj", "{7E7845C5-176C-4CD2-83AC-39CFCC1E4B5F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelThieving", "JewelThief\JewelThieving.csproj", "{60D798D7-0E3C-43E2-98B7-44AEB5DD2B18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contructorTest", "contructorTest\contructorTest.csproj", "{9679F032-A2D1-49F3-963E-AD8C7D4B7131}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{7E7845C5-176C-4CD2-83AC-39CFCC1E4B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E7845C5-176C-4CD2-83AC-39CFCC1E4B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E7845C5-176C-4CD2-83AC-39CFCC1E4B5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60D798D7-0E3C-43E2-98B7-44AEB5DD2B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D798D7-0E3C-43E2-98B7-44AEB5DD2B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D798D7-0E3C-43E2-98B7-44AEB5DD2B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60D798D7-0E3C-43E2-98B7-44AEB5DD2B18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9679F032-A2D1-49F3-963E-AD8C7D4B7131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9679F032-A2D1-49F3-963E-AD8C7D4B7131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9679F032-A2D1-49F3-963E-AD8C7D4B7131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9679F032-A2D1-49F3-963E-AD8C7D4B7131}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
