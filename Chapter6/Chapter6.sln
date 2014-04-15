@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JewelThieving", "JewelThief
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contructorTest", "contructorTest\contructorTest.csproj", "{9679F032-A2D1-49F3-963E-AD8C7D4B7131}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeeHiveManagement", "BeeHiveManagement\BeeHiveManagement.csproj", "{61D7BEC4-40D7-454B-AA01-4C520682C5DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9679F032-A2D1-49F3-963E-AD8C7D4B7131}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9679F032-A2D1-49F3-963E-AD8C7D4B7131}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9679F032-A2D1-49F3-963E-AD8C7D4B7131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D7BEC4-40D7-454B-AA01-4C520682C5DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D7BEC4-40D7-454B-AA01-4C520682C5DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D7BEC4-40D7-454B-AA01-4C520682C5DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D7BEC4-40D7-454B-AA01-4C520682C5DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

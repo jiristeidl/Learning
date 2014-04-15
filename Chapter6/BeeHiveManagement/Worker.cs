@@ -18,10 +18,16 @@ namespace BeeHiveManagement
                     return currentJob;
             }
         }
-        public int ShiftsLeft { get; }
+        public int ShiftsLeft
+        {
+            get
+            {
+                return shiftsToWork - shiftsWorked;
+            }
+        }
         private string[] jobsICanDo;
         private int shiftsToWork;
-        private int shiftsWorked;
+        private int shiftsWorked=0;
 
         internal bool DoThisJob(string job, int shifts)
         {
@@ -30,7 +36,12 @@ namespace BeeHiveManagement
                 foreach (string canDo in jobsICanDo)
                 {
                     if (canDo.Equals(job))
+                    {
+                        currentJob = job;
+                        shiftsToWork = shifts;
+                        shiftsWorked = 0;
                         return true;
+                    }
                 }
                 return false;
             }
@@ -39,7 +50,15 @@ namespace BeeHiveManagement
         }
         internal bool DidYouFinish()
         {
-            throw new NotImplementedException();
+            shiftsWorked++;
+            if (shiftsToWork == shiftsWorked)
+            {
+                currentJob = "";
+                shiftsToWork = 0;
+                return true;
+            }
+            else
+                return false;
         }        
     }
 }
