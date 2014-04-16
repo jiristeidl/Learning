@@ -51,6 +51,8 @@ namespace BeeHiveManagement
         internal bool DidYouFinish()
         {
             shiftsWorked++;
+            if (CurrentJob == "")
+                return true;
             if (shiftsToWork == shiftsWorked)
             {
                 currentJob = "";
@@ -59,6 +61,11 @@ namespace BeeHiveManagement
             }
             else
                 return false;
-        }        
+        }
+
+        public Worker(string[] jobs)
+        {
+            jobsICanDo = jobs;
+        }
     }
 }

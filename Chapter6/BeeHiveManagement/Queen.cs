@@ -29,13 +29,13 @@ namespace BeeHiveManagement
         public string WorkTheNextShift()
         {
             string report = "";
-            report += "Report for shift #" + shiftNumber + "\n";
+            report += "Report for shift #" + shiftNumber++ + "\r\n";
             for (int i=0;i<workers.Length;i++)
             {
                 if (workers[i].DidYouFinish())
-                    report += "Worker #" + (i + 1) + " finished the job\n";
+                    report += "Worker #" + (i + 1) + " finished the job\r\n";
                 else
-                    report += "Worker #" + (i + 1) + " is doing '" + workers[i].CurrentJob + "' for " + workers[i].ShiftsLeft + " more shifts";
+                    report += "Worker #" + (i + 1) + " is doing '" + workers[i].CurrentJob + "' for " + workers[i].ShiftsLeft + " more shifts\r\n";
             }
             return report;
         }
