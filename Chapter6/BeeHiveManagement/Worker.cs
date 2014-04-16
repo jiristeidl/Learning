@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BeeHiveManagement
 {
-    class Worker
+    class Worker : Bee
     {
         private string currentJob;
         public string CurrentJob
@@ -28,6 +28,7 @@ namespace BeeHiveManagement
         private string[] jobsICanDo;
         private int shiftsToWork;
         private int shiftsWorked=0;
+        const double honeyUnitsPerShiftWorked = 0.65;
 
         internal bool DoThisJob(string job, int shifts)
         {
@@ -52,7 +53,7 @@ namespace BeeHiveManagement
         {
             shiftsWorked++;
             if (CurrentJob == "")
-                return true;
+                return false;
             if (shiftsToWork == shiftsWorked)
             {
                 currentJob = "";
@@ -62,8 +63,12 @@ namespace BeeHiveManagement
             else
                 return false;
         }
+        public override double HoneyConsumtionRate()
+        {
+            return base.HoneyConsumtionRate() + shiftsWorked*honeyUnitsPerShiftWorked;
+        }
 
-        public Worker(string[] jobs)
+        public Worker(string[] jobs, double weightMg) : base(weightMg)
         {
             jobsICanDo = jobs;
         }
