@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Windows Desktop
 VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter7", "Chapter7\Chapter7.csproj", "{CA6809CF-9221-4EC1-845C-28886C86416C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeeHiveManagement", "..\Chapter6\BeeHiveManagement\BeeHiveManagement.csproj", "{61D7BEC4-40D7-454B-AA01-4C520682C5DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CA6809CF-9221-4EC1-845C-28886C86416C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA6809CF-9221-4EC1-845C-28886C86416C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA6809CF-9221-4EC1-845C-28886C86416C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA6809CF-9221-4EC1-845C-28886C86416C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D7BEC4-40D7-454B-AA01-4C520682C5DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D7BEC4-40D7-454B-AA01-4C520682C5DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D7BEC4-40D7-454B-AA01-4C520682C5DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D7BEC4-40D7-454B-AA01-4C520682C5DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
